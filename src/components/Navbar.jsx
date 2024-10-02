@@ -5,7 +5,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <header className="bg-zinc-900 p-5 mb-4 rounded-2xl sticky top-0">
+    <header className="bg-zinc-900 p-5 mb-4 rounded-2xl sticky top-0 z-40">
       <div className="flex text-white">
         <a href="/">
           <h1 className="my-auto font-bold text-[22px] lg:text-3xl  pr-2 mr-2 border-r-2 border-green-500 lg:pr-5 lg:mr-5">
@@ -53,27 +53,17 @@ const Navbar = () => {
               </li>
             </NavLink>
             <NavLink
-              to="/portfolio"
+              to="/projects"
               style={({ isActive }) => ({
                 color: isActive ? "rgb(0, 255, 0)" : "#fff",
                 textDecoration: "none",
               })}
             >
               <li className="mr-10 p-1 border-b-2 border-transparent hover:border-b-green-300 transition-all duration-300 ease-linear">
-                Portfolio
+                Projects
               </li>
             </NavLink>
-            <NavLink
-              to="/feedback"
-              style={({ isActive }) => ({
-                color: isActive ? "rgb(0, 255, 0)" : "#fff",
-                textDecoration: "none",
-              })}
-            >
-              <li className="mr-10 p-1 border-b-2 border-transparent hover:border-b-green-300 transition-all duration-300 ease-linear">
-                Feedback
-              </li>
-            </NavLink>
+            
             <NavLink
               to="/contact"
               style={({ isActive }) => ({
@@ -134,22 +124,13 @@ const Navbar = () => {
               <li className="mb-2 hover:text-green-500">About</li>
             </NavLink>
             <NavLink
-              to="/portfolio"
+              to="/projects"
               style={({ isActive }) => ({
                 color: isActive ? "rgb(0, 255, 0)" : "#fff",
                 textDecoration: "none",
               })}
             >
-              <li className="mb-2 hover:text-green-500">Portfolio</li>
-            </NavLink>
-            <NavLink
-              to="/feedback"
-              style={({ isActive }) => ({
-                color: isActive ? "rgb(0, 255, 0)" : "#fff",
-                textDecoration: "none",
-              })}
-            >
-              <li className="mb-2 hover:text-green-500">Feedback</li>
+              <li className="mb-2 hover:text-green-500">Projects</li>
             </NavLink>
             <NavLink
               to="/contact"
