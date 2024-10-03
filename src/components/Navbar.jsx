@@ -78,7 +78,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a
-          href="https://github.com/PugazhendhiDev/"
+          href="https://github.com/jliyon23/"
           className="my-auto ml-auto flex rounded text-white font-bold bg-zinc-600 border-2 border-green-500 p-1 lg:px-5 lg:py-2"
         >
           <svg
