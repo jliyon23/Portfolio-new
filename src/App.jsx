@@ -8,7 +8,7 @@ import Maintenance from "./components/Maintenance";
 import MaintenancePopup from "./components/MaintenancePopUp";
 
 function App() {
-  const [showPopup, setShowPopup] = useState(true); // State to control popup visibility
+  const [showPopup, setShowPopup] = useState(false); // State to control popup visibility
 
   // Automatically close the popup after 5 seconds (optional)
   useEffect(() => {
