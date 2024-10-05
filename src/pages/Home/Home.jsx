@@ -1,11 +1,30 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import Techstack from "../../components/Techstack";
+import Divider from "../../components/Divider";
 
 const Home = () => {
   return (
     <div className="w-full p-5 md:px-16  text-white">
-      <h1 className="text-4xl font-extrabold">I'm Joseph Liyon</h1>
+      <div className="flex flex-col items-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h1 className="text-4xl font-bold tracking-tighter  md:text-5xl lg:text-6xl/none">
+                  Hi, I'm Joseph Liyon 
+                </h1>
+                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+                  I'm a full-stack developer with a passion for creating beautiful and functional web, mobile applications.
+                </p>
+              </div>
+              <div className="space-x-4">
+                <a href="#contact">
+                  <button className="p-2 mt-3 bg-[#43b043] rounded-sm hover:bg-green-500">Download Resume <i class="fa-solid fa-download"></i></button>
+                </a>
+                <a href="#projects">
+                  <button className="p-2 mt-3 border border-[#43b043] rounded-sm hover:bg-green-500" variant="outline">View my work</button>
+                </a>
+              </div>
+            </div>
+      {/* <h1 className="text-4xl font-extrabold">I'm Joseph Liyon</h1>
       <p className="pt-3 text-lg">
         Welcome to my corner of the web! I’m Joseph Liyon, a Btech CSE student
         with a passion for full-stack development. Whether it's MERN, Django, or
@@ -34,9 +53,9 @@ const Home = () => {
       </p>
       <button className="p-2 mt-3 bg-green-600 rounded-sm hover:bg-green-500">
         Download Resume <i class="fa-solid fa-download"></i>
-      </button>
+      </button> */}
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-2xl font-extrabold pt-5">Connect with me</h1>
+        <h1 className="text-2xl  font-extrabold pt-5">Connect with me</h1>
         <div className="flex gap-3 justify-center items-center p-2 mt-3">
           <a
             href="https://github.com/jliyon23"
@@ -61,12 +80,12 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col items-center mt-5 ">
-        <h1 className="text-2xl font-extrabold">Professional <span className="text-[#00ff00]">Skillset</span></h1>
+      <div className="flex flex-col items-center mt-24 ">
+        <h1 className="text-3xl font-extrabold">Skills</h1>
         <Techstack />
       </div>
-      <div className="flex flex-col mt-3 items-center justify-center">
-        <h1 className="text-2xl font-extrabold pt-5">GitHub Activity</h1>
+      <div className="flex flex-col mt-10 items-center justify-center">
+        <h1 className="text-2xl font-extrabold ">GitHub Activity</h1>
         <GitHubCalendar
           username="jliyon23"
           blockSize={10}
