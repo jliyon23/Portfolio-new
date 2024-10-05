@@ -2,28 +2,36 @@ import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import Techstack from "../../components/Techstack";
 import Divider from "../../components/Divider";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="w-full p-5 md:px-16  text-white">
       <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h1 className="text-4xl font-bold tracking-tighter  md:text-5xl lg:text-6xl/none">
-                  Hi, I'm Joseph Liyon 
-                </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  I'm a full-stack developer with a passion for creating beautiful and functional web, mobile applications.
-                </p>
-              </div>
-              <div className="space-x-4">
-                <a href="/contact">
-                  <button className="p-2 mt-3 bg-[#43b043] rounded-sm hover:bg-green-500">Download Resume <i class="fa-solid fa-download"></i></button>
-                </a>
-                <a href="/projects">
-                  <button className="p-2 mt-3 border border-[#43b043] rounded-sm hover:bg-green-500" variant="outline">View my work</button>
-                </a>
-              </div>
-            </div>
+        <div className="space-y-2">
+          <h1 className="text-4xl font-bold tracking-tighter  md:text-5xl lg:text-6xl/none">
+            Hi, I'm Joseph Liyon
+          </h1>
+          <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+            I'm a full-stack developer with a passion for creating beautiful and
+            functional web, mobile applications.
+          </p>
+        </div>
+        <div className="space-x-4">
+          <button className="p-2 mt-3 bg-[#43b043] rounded-sm hover:bg-green-500">
+            Download Resume <i class="fa-solid fa-download"></i>
+          </button>
+
+          <NavLink to="/projects">
+            <button
+              className="p-2 mt-3 border border-[#43b043] rounded-sm hover:bg-green-500"
+              variant="outline"
+            >
+              View my work
+            </button>
+          </NavLink>
+        </div>
+      </div>
       {/* <h1 className="text-4xl font-extrabold">I'm Joseph Liyon</h1>
       <p className="pt-3 text-lg">
         Welcome to my corner of the web! I’m Joseph Liyon, a Btech CSE student
