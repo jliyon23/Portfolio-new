@@ -72,7 +72,7 @@ const Home = () => {
             <i class="fa-brands fa-linkedin"></i>
           </a>
           <a
-            href="https://instagram.com/liyon.raw"
+            href="https://instagram.com/josephh.liyon"
             target="_blank"
             className="p-4 px-5 bg-zinc-800 rounded-full border border-white hover:bg-[#00ff00]"
           >
