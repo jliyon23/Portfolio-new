@@ -16,10 +16,10 @@ const Home = () => {
                 </p>
               </div>
               <div className="space-x-4">
-                <a href="#contact">
+                <a href="/contact">
                   <button className="p-2 mt-3 bg-[#43b043] rounded-sm hover:bg-green-500">Download Resume <i class="fa-solid fa-download"></i></button>
                 </a>
-                <a href="#projects">
+                <a href="/projects">
                   <button className="p-2 mt-3 border border-[#43b043] rounded-sm hover:bg-green-500" variant="outline">View my work</button>
                 </a>
               </div>
